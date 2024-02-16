@@ -2,14 +2,12 @@ import React from "react";
 
 // import c from './Profile.module.css';
 import Myposts from "./MyPosts/Myposts";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 const Profile = () => {
     return (
-        <div>
-            <img src='https://png.pngtree.com/thumb_back/fh260/background/20220216/pngtree-colorful-gradient-lighting-effect-e-commerce-promotion-banner-background-image_929719.jpg' />
-            <div>
-                ava + desc
-            </div>
+        <div >
+            <ProfileInfo/>
             <Myposts/>
         </div>
     )
