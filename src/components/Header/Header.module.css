@@ -1,8 +1,33 @@
+
+
 .header {
     grid-area: h;
-    background-color: aqua;
+    border-radius: 15px;
+    margin: 5px 0 5px;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.logo {
+    color: blue;
+    text-align: left;
+    font-size: 2.5em;
+    /* padding-left: 1rem; */
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.header img {
-    width: 150px;
+.login {
+    display: flex;
+    color: blue;
+    font-size: 1.1em;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* padding-right: 1rem; */
+}
+
+.login p {
+    padding-right: 1rem;
 }

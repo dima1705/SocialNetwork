@@ -1,0 +1,17 @@
+.dialog {
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    /* border: 1px solid;  */
+    background-color: #cbf3ff;
+    border-radius: 10px;
+}
+
+.dialog a {
+    text-decoration: none;
+    color: blue;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}

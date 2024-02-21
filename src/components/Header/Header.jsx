@@ -4,7 +4,13 @@ import h from './Header.module.css'
 const Header = () => {
     return (
         <header className={h.header}>
-            <img src='https://www.shutterstock.com/image-vector/digital-technology-social-network-global-260nw-1964287255.jpg' />
+            <div className={h.logo}>
+                SNet
+            </div>
+            <div className={h.login}>
+                <p>Sign In</p>
+                <p>login</p>
+            </div>
         </header>
     )
 
