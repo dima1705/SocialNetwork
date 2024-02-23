@@ -6,18 +6,25 @@ const Myposts = (props) => {
 
     let postsEl = props.posts.map(p => <Post message={p.message} likesCount={p.likesCount} />)
 
+    let newPostEl = React.createRef()
+
+    let addPost = () => {
+        let text = newPostEl.current.value;
+        props.addPost(text)
+        newPostEl.current.value = ''
+    }
+
+
     return (
         <div className={c.postsBlock}>
             <div>
                 <h3>My posts</h3>
                 <div className={c.newPostBlock}>
                     <div>
-                        <textarea placeholder="Type something in...">
-                            {/* <input  /> */}
-                        </textarea>
+                        <textarea placeholder="Type something in..." ref={newPostEl}/>
                     </div>
                     <div>
-                        <button>Add post</button>
+                        <button onClick={ addPost }>Add post</button>
                     </div>
                 </div>
                 <div className={c.posts}>

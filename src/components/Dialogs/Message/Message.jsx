@@ -6,7 +6,9 @@ const Message = (props) => {
 
     return (
         <div className={c.dialog}>
-            {props.message}
+            <div>
+                {props.message}
+            </div>         
         </div>
     )
 }
